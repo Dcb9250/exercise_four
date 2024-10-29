@@ -7,6 +7,8 @@ app.get("/", (req, res) => {
 	res.send("Hello World!");
 });
 
+app.use (express.static('public'))
+
 app.listen(port, () => {
 	//listened to requests on the specified port
 	console.log(`Example app listening on port ${port}`);
